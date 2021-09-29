@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+
+
+<body>
+    <link rel="stylesheet" href="css.css">
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    
+        table {
+            border-collapse: collapse;
+        }
+    
+        th,
+        td {
+            padding: 10px;
+        }
+    </style>
+    
+
+    
+    <img src="SwissBank.png" width="200" height="80">
+
+    <hr>
+    <section align="right">
+        <button class="submit" type="button" onclick="home()">Home</button>
+    </section>
+    <section align="center">
+        <h2 style="font-family:verdana">Welcome to Swiss Bank Services!</h2>
+        <img src="Swissbanklogo.png" width="100" height="100">
+
+        <h3 style="font-family:verdana">Hello Admin</h3>
+        <button  class="savingsButton1" onclick="savingsButton()">Savings</button>
+        <button class="fixedDepositButton1" onclick="fixedDepositButton()">Fixed Deposit</button>
+        <p>
+            <h4 style="font-family:verdana">Savings Amount: <span id="savingsAmount"></span></h4>
+        </p>
+        <p>
+            <h4 style="font-family:verdana">Fixed Deposit Amount: <span id="fixedDepositAmount"></span></h4>
+        </p>
+    </section>
+    <div id="savingsTable">
+
+    </div>
+    <div id="fixedDepositTable">
+
+    </div>
+    <script src="admin.js"></script>
+</body>
+
+</html>

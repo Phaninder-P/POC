@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+</style>
+<!-- <h1>SWISS BANK</h1> -->
+<img src="SwissBank.png" width="200" height="80">
+
+<hr>
+<section align="right">
+    <button id='btn3' class="btn3" style="background-color: gray;" onclick="function3()">Home</button>
+</section>
+<section align="center">
+    <h2 style="font-family:verdana">Welcome to Swiss Bank Services!</h2>
+    <img src="Swissbanklogo.png" width="100" height="100">
+    <link rel="stylesheet" href="css.css">
+
+
+    <body>
+
+        <h3 id="userName" style="font-family:verdana">Welcome, </h3>
+
+        <button class="button" id="savingsAccountButton">Savings Account</button>
+        <button class="button" id="fixedDepositButton">Fixed Deposit</button>
+
+
+        <div id="savingsAccount" style="display:none;">
+            <b>
+                <p id="accBalance"></p>
+                <form id="savingsForm">
+                    <label for="savings">
+                        <h3 style="font-family:verdana">Add Amount:</h3>
+                    </label>
+                    <input type="number" id="addMoney" name="addMoney" placeholder="Enter Amount"
+                        style="width:300px;height:20px"><br><br>
+                    <input type="submit" value="Add Money" class="submit" id="submitSavingsButton" onclick="submitSavings(event,this.parentNode)"></input>
+                </form>
+                <br>
+                <div id="transactable" style="padding-left:420px">
+                </div>
+
+
+        </div>
+
+
+
+        <div id="fixedAccount" style="display:none">
+            <p><br>
+                <h2>Rate of Interest:<br> 1 Year = 6% <br> 5 Years = 6.5% </h2>
+            </p>
+            <form id="form1">
+
+                <label for="fixedDeposit">
+                    <h3 style="font-family:verdana">FD Amount:</h3>
+                </label>
+                <input type="number" id="fdAmount" name="fdAmount" placeholder="Enter Amount" style="width:250px;height:20px" required>
+                <br>
+
+                <label for="duration">
+                    <h3 style="font-family:verdana">Duration:</h3>
+                </label>
+                <select id="selectbox" style="width:100px;height:20px">
+                    <option value="6%">1 Year</option>
+                    <option value="6.5%">5 Years</option>
+                </select>
+                <br>
+                <br>
+
+                <!-- <button id="fdSubmit">Create FD</button> -->
+                <input type="submit" value="Create FD" id="fdButton" class="submit"></input>
+            </form>
+
+
+
+        </div>
+
+
+
+
+        <script src=user.js></script>
+
+
+
+
+
+    </body>
+
+
+</html>
